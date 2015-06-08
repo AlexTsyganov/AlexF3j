@@ -1,0 +1,12 @@
+\documentclass{article}
+
+% http://sourceforge.net/projects/pgfplots/
+\usepackage{pgfplots}
+
+\begin{document}
+\begin{tikzpicture}
+	\begin{axis}[width=190pt,axis x line=middle, axis y line=center, tick align=outside]
+		\addplot+[mark=none,smooth] (\x,{sin(\x r)});
+	\end{axis}
+\end{tikzpicture}
+\end{document}
